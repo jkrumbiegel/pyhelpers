@@ -37,15 +37,28 @@ def get_color_cycler(
             b_max = - b_min
 
     if type == "Lch":
-        rgb = get_lch_rgb(n, l_min, l_max, c_min, c_max, h_min, h_max)
+        rgb = get_lch_rgb(
+            n=n,
+            l_min=l_min,
+            l_max=l_max,
+            c_min=c_min,
+            c_max=c_max,
+            h_min=h_min,
+            h_max=h_max,
+            clamped_tuples=True)
+
     if type == "Lab":
-        rgb = get_lab_rgb(n, l_min, l_max, a_min, a_max, b_min, b_max)
+        rgb = get_lch_rgb(
+            n=n,
+            l_min=l_min,
+            l_max=l_max,
+            a_min=a_min,
+            a_max=a_max,
+            b_min=b_min,
+            b_max=b_max,
+            clamped_tuples=True)
 
-    clamped_rgb_tuples = [
-        (color.clamped_rgb_r, color.clamped_rgb_g, color.clamped_rgb_b)
-        for color in rgb]
-
-    cyc = cycler("color", clamped_rgb_tuples)
+    cyc = cycler("color", rgb)
     return cyc
 
 
