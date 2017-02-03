@@ -1,0 +1,82 @@
+#Author: Cameron Davidson-Pilon, replicated styles from FiveThirtyEight.com
+# See https://www.dataorigami.net/blogs/fivethirtyeight-mpl
+
+lines.linewidth: 1.5
+lines.solid_capstyle: butt
+
+legend.fancybox: false
+legend.facecolor: fbfbfb
+legend.edgecolor: e0e0e0
+legend.fontsize: 12
+legend.borderpad: 0.6
+
+axes.prop_cycle: cycler('color', ['30a2da', 'fc4f30', 'e5ae38', '6d904f', '8b8b8b'])
+axes.facecolor: f9f9f9
+axes.labelsize: 12.0
+axes.axisbelow: true
+axes.grid: true
+axes.edgecolor: e0e0e0
+axes.linewidth: 1.5
+axes.titlesize: 18.0
+#axes.titleweight: bold
+axes.labelpad: 8
+
+patch.edgecolor: f0f0f0
+patch.linewidth: 0.5
+
+svg.fonttype: path
+
+grid.linestyle: -
+grid.linewidth: 1.0
+grid.color: e6e6e6
+
+#xtick.top            : False   # draw ticks on the top side
+#xtick.bottom         : True   # draw ticks on the bottom side
+xtick.major.size     : 0      # major tick size in points
+#xtick.minor.size     : 2      # minor tick size in points
+#xtick.major.width    : 0.8    # major tick width in points
+#xtick.minor.width    : 0.6    # minor tick width in points
+xtick.major.pad      : 5      # distance to major tick label in points
+xtick.minor.pad      : 5      # distance to the minor tick label in points
+#xtick.color          : e0e0e0      # color of the tick labels
+xtick.labelsize      : 10 # fontsize of the tick labels
+xtick.direction      : in    # direction: in, out, or inout
+xtick.minor.visible  : False  # visibility of minor ticks on x-axis
+#xtick.major.top      : True   # draw x axis top major ticks
+#xtick.major.bottom   : True   # draw x axis bottom major ticks
+#xtick.minor.top      : True   # draw x axis top minor ticks
+#xtick.minor.bottom   : True   # draw x axis bottom minor ticks
+
+#ytick.left           : True   # draw ticks on the left side
+#ytick.right          : False  # draw ticks on the right side
+ytick.major.size     : 0      # major tick size in points
+#ytick.minor.size     : 2      # minor tick size in points
+#ytick.major.width    : 0.8    # major tick width in points
+#ytick.minor.width    : 0.6    # minor tick width in points
+ytick.major.pad      : 5      # distance to major tick label in points
+ytick.minor.pad      : 5      # distance to the minor tick label in points
+#ytick.color          : e0e0e0     # color of the tick labels
+ytick.labelsize      : 10 # fontsize of the tick labels
+ytick.direction      : in    # direction: in, out, or inout
+ytick.minor.visible  : False  # visibility of minor ticks on y-axis
+#xtick.major.left     : True   # draw y axis left major ticks
+#xtick.major.right    : True   # draw y axis right major ticks
+#xtick.minor.left     : True   # draw y axis left minor ticks
+#xtick.minor.right    : True   # draw y axis right minor ticks
+
+font.size:12.0
+font.family: STIXGeneral
+
+mathtext.fontset: stix
+
+savefig.edgecolor: f0f0f0
+savefig.facecolor: fbfbfb
+
+figure.subplot.left: 0.05
+figure.subplot.right: 0.95 
+figure.subplot.bottom: 0.05
+figure.subplot.top: 0.95
+figure.subplot.hspace: 0.4
+figure.facecolor: fbfbfb
+figure.titlesize: 24
+figure.titleweight: normal
