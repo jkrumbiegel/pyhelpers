@@ -48,7 +48,7 @@ def get_color_cycler(
             clamped_tuples=True)
 
     if type == "Lab":
-        rgb = get_lch_rgb(
+        rgb = get_lab_rgb(
             n=n,
             l_min=l_min,
             l_max=l_max,
